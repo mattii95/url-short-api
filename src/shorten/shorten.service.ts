@@ -75,4 +75,10 @@ export class ShortenService {
             this.logger.error(error);
         }
     }
+
+    async getStatisticsByCode(code: string) {
+        const shorten = await this.findOneByCode(code);
+        // TODO: Add more statistics
+        return shorten;
+    }
 }

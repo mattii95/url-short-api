@@ -19,3 +19,5 @@ docker compose up -d
 ```
 npm run start:dev
 ```
+
+Project URL:  [url-short-api](https://github.com/mattii95/url-short-api)

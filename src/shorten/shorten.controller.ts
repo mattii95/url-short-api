@@ -22,6 +22,11 @@ export class ShortenController {
     return this.shortenService.findOneByCode(code);
   }
 
+  @Get(':code/stats')
+  getStatisticsByCode(@Param('code') code: string) {
+    return this.shortenService.getStatisticsByCode(code);
+  }
+
   @Patch(':code')
   update(@Param('code') code: string, @Body() updateShortenDto: UpdateShortenDto) {
     return this.shortenService.update(code, updateShortenDto);
